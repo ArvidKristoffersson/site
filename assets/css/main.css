@@ -120,7 +120,7 @@
     position: relative;
     width: 100%; /* Full width */
     height: 60vh; /* Full viewport height */
-    background-image: url("{{ site.baseurl }}/assets/images/ioai-all-teams.png"); /* Replace with your image path */
+    /*background-image: url("{{ site.baseurl }}/assets/images/ioai-all-teams.png"); *//* Replace with your image path */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the image */
     display: flex; /* Flexbox for centering content */
