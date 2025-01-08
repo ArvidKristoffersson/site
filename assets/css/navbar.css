@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     font-family: Arial, sans-serif;
-  }
+}
   
-  nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,117 +17,114 @@
     padding: 5px 20px;
     position: relative;
     z-index: 10;
-  }
-  
-  .navbar-logo {
+}
+
+.navbar-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-  }
-  
-  .navbar-logo img {
+}
+
+.navbar-logo img {
     height: 50px;
     margin-right: 15px;
-  }
-  
-  .navbar-logo span {
+}
+
+.navbar-logo span {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
-  }
-  
-  .navbar-links {
+}
+
+.navbar-links {
     display: flex;
     gap: 15px;
-  }
-  
-  .navbar-links a {
+}
+
+.navbar-links a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-  }
-  
-  .navbar-links a:hover {
+}
+
+.navbar-links a:hover {
     color: #ffdd00;
-  }
-  
-  .discord {
+}
+
+.discord {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .discord-text {
+}
+
+.discord-text {
     color: white;
     font-size: 1rem;
-  }
-  
-  .discord-link img {
+}
+
+.discord-link img {
     width: 40px;
     height: 30px;
-  }
-  
-  /* Mobile Menu Toggle */
-  .menu-toggle {
+}
+
+.menu-toggle {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-  }
-  
-  .menu-toggle div {
+}
+
+.menu-toggle div {
     width: 25px;
     height: 3px;
     background-color: white;
-  }
-  
-  /* Mobile Menu */
-  .mobile-menu {
+}
+
+.mobile-menu {
     display: none;
     flex-direction: column;
     background-color: #28282B;
     width: 100%;
     position: absolute;
-    top: 50px; /* Directly below the navbar */
+    top: 50px;
     left: 0;
     padding: 10px 20px;
     z-index: 5;
-  }
-  
-  .mobile-menu.open {
+}
+
+.mobile-menu.open {
     display: flex;
-  }
-  
-  .mobile-menu a {
+}
+
+.mobile-menu a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
     padding: 10px 0;
     border-bottom: 1px solid #333;
-  }
-  
-  .mobile-menu a:last-child {
+}
+
+.mobile-menu a:last-child {
     border-bottom: none;
-  }
-  
-  .mobile-menu a:hover {
+}
+
+.mobile-menu a:hover {
     color: #ffdd00;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
     .navbar-logo span {
-      font-size: 1.2rem; /* Smaller font size for mobile */
+        font-size: 1.2rem;
     }
     .navbar-links {
-      display: none;
+        display: none;
     }
-  
+
     .menu-toggle {
-      display: flex;
+        display: flex;
     }
-  
+
     .discord {
-      display: none;
+        display: none;
     }
-  }
+}

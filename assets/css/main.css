@@ -16,14 +16,9 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Centered Text Class */
 .centered-text {
     display: block;
-    max-width: 800px; /* Limits width for better readability */
+    max-width: 800px; 
     text-align: center;
     margin: 20px auto;
     padding: 20px;
@@ -37,11 +32,9 @@ a:hover {
 }
 
 .centered-text a {
-    color: #007BFF; /* Modern blue for links */
-    text-decoration: underline;
+    color: #007BFF;
 }
 
-/* Styles for the heading */
 .centered-text h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -64,7 +57,6 @@ a:hover {
     font-size: 1.1em;
 }
 
-/* Paragraphs */
 .centered-text p {
     font-size: 23px;
     color: #555;
@@ -74,7 +66,6 @@ a:hover {
     line-height: 1.5;
 }
 
-/* Centered Image */
 .center-img {
     display: block;
     margin: 40px auto;
@@ -95,7 +86,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -119,7 +109,6 @@ a:hover {
     margin: 0;
 }
 
-/* Main Sections */
 .info {
     width: 50%;
     padding: 20px;
@@ -139,20 +128,20 @@ a:hover {
 
 .info-rem {
     width: 50%;
-    height: 40vh; /* Set the desired height */
-    display: flex; /* Ensure the image fills the space */
+    height: 40vh;
+    display: flex; 
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide any overflowing part of the image */
-    position: relative; /* Required for positioning child elements */
+    overflow: hidden;
+    position: relative;
 }
 
 .info-rem img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
-    object-position: center; /* Centers the image */
-    position: relative; /* Allows the image to fill the container */
+    object-fit: cover;
+    object-position: center;
+    position: relative;
 }
 
 .info-quart {
@@ -169,7 +158,6 @@ a:hover {
     height: auto;
 }
 
-/* Page Title */
 .page-title {
     font-size: 2.2rem;
     font-weight: bold;
@@ -179,9 +167,7 @@ a:hover {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Layouts */
 
-/* Medium screens (tablets, small laptops) */
 @media (max-width: 900px) {
     .hero {
         height: 50vh;
@@ -192,7 +178,7 @@ a:hover {
     }
 
     .info {
-        width: 100%; /* Full width for readability on smaller screens */
+        width: 100%; 
     }
 
     .info-rem {
@@ -201,7 +187,7 @@ a:hover {
     }
 
     .info-quart {
-        display: none; /* Hide on smaller screens */
+        display: none; 
     }
 
     .centered-text {
@@ -218,7 +204,6 @@ a:hover {
     }
 }
 
-/* Small screens (mobile devices) */
 @media (max-width: 600px) {
     .hero {
         height: 40vh;
@@ -248,7 +233,7 @@ a:hover {
     }
 
     .info-quart {
-        display: none; /* Hide completely on very small screens */
+        display: none;
     }
 
     .page-title {
