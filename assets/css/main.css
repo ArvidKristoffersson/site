@@ -1,0 +1,209 @@
+.linked-img:hover {
+    transform: scale(1.025);
+}
+
+
+.info-quart {
+    display: block;   
+    position: relative;
+    height: 40vh;
+    align-items: center;
+    text-align: start;
+    width: 25%;
+}
+
+/* Text 1 */
+.info {
+    display: block;   
+    position: relative;
+    height: 40vh;
+    align-items: center;
+    text-align: start;
+    width: 50%;
+}
+
+.info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-left:30px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.info-rem {
+    display: block;   
+    position: relative;
+    height: 40vh;
+    align-items: center;
+    text-align: start;
+    width:50%;
+}
+
+
+.page-title {
+    font-size: 2.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Text Class */
+.centered-text {
+    display: block;       /* Makes the element a block-level container */
+    width: 80%;          /* Can be any width you want, will center it inside */
+    text-align: center;   /* Center the text horizontally */
+    margin-left: auto;    /* Centers the container */
+    margin-right: auto;   /* Centers the container */
+    padding: 20px;        /* Optional: add padding around the text */
+}
+
+/* Styles for the heading */
+.centered-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+}
+
+.centered-text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+/* Styles for the paragraph */
+.centered-text p {
+    font-size: 18px; /* Medium-sized text for the paragraph */
+    color: #555; /* Lighter color for paragraph text */
+    margin-top: 10px; /* Adds space between heading and paragraph */
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 1.5;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 75px;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 60vh; /* Full viewport height */
+    background-image: url('/assets/images/ioai-all-teams.png'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center the text */
+}
+  
+.hero-content {
+    color: #ffffff; /* White text */
+}
+  
+.hero-title {
+    font-size: 3rem; /* Large title */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.7rem;
+    }
+    .centered-text {
+        width: 90%;
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+    .centered-text h1 {
+        font-size: 1.5rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .centered-text h2 {
+        font-size: 1.1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .centered-text p {
+        font-size: 1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .linked-img {
+        display: none;
+    }
+
+    .info {
+        width: 100%;
+        height: 45vh;
+    }
+    .info h1 {
+        font-size: 1.3rem;
+    }
+    .info p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .info-quart {
+        display:none;
+        width: 0%;
+    }
+
+    .info-rem {
+        display:none;
+        width: 0%;
+    }
+
+
+    .hero-title {
+        font-size: 1.4rem; /* Smaller title on mobile */
+    }
+    .hero {
+        height: 40vh;
+    }
+
+
+
+}

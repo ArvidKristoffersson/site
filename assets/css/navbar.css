@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #28282B;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .navbar-logo span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-links a:hover {
+    color: #ffdd00;
+  }
+  
+  .discord {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .discord-text {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .discord-link img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #28282B;
+    width: 100%;
+    position: absolute;
+    top: 50px; /* Directly below the navbar */
+    left: 0;
+    padding: 10px 20px;
+    z-index: 5;
+  }
+  
+  .mobile-menu.open {
+    display: flex;
+  }
+  
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .mobile-menu a:hover {
+    color: #ffdd00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-logo span {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+    .navbar-links {
+      display: none;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .discord {
+      display: none;
+    }
+  }
