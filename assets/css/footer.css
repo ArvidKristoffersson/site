@@ -55,7 +55,9 @@ main {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+
+
+@media (max-width: 1200px) {
     /* Hide the text on mobile */
     .footer-text {
         display: none;

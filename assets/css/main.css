@@ -1,71 +1,44 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
 .linked-img:hover {
     transform: scale(1.025);
 }
 
-.info-quart {
-    display: block;   
-    position: relative;
-    height: 40vh;
-    align-items: center;
-    text-align: start;
-    width: 25%;
+a {
+    color: blue;
+    text-decoration: none;
 }
 
-/* Text 1 */
-.info {
-    display: block;   
-    position: relative;
-    height: 40vh;
-    align-items: center;
-    text-align: start;
-    width: 50%;
-}
-
-.info h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    margin-left:30px;
-}
-
-.info p {
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5px;
-    margin-left: 30px;
-}
-
-.info-rem {
-    display: block;   
-    position: relative;
-    height: 40vh;
-    align-items: center;
-    text-align: start;
-    width:50%;
-}
-
-
-.page-title {
-    font-size: 2.2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+a:hover {
+    text-decoration: underline;
 }
 
 /* Centered Text Class */
 .centered-text {
-    display: block;       /* Makes the element a block-level container */
-    width: 80%;          /* Can be any width you want, will center it inside */
-    text-align: center;   /* Center the text horizontally */
-    margin-left: auto;    /* Centers the container */
-    margin-right: auto;   /* Centers the container */
-    padding: 20px;        /* Optional: add padding around the text */
+    display: block;
+    max-width: 800px; /* Limits width for better readability */
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.centered-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.centered-text a {
+    color: #007BFF; /* Modern blue for links */
+    text-decoration: underline;
 }
 
 /* Styles for the heading */
@@ -75,10 +48,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 0px;
+    margin: 20px 40px 0px 40px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.5em;
 }
@@ -89,118 +59,214 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 0px;
+    margin: 0px 40px 0px 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
 }
 
-/* Styles for the paragraph */
+/* Paragraphs */
 .centered-text p {
-    font-size: 18px; /* Medium-sized text for the paragraph */
-    color: #555; /* Lighter color for paragraph text */
-    margin-top: 10px; /* Adds space between heading and paragraph */
+    font-size: 23px;
+    color: #555;
+    margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
     line-height: 1.5;
 }
 
+/* Centered Image */
 .center-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin-top: 75px;
+    margin: 40px auto;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.center-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.center-img:hover img {
+    transform: scale(1.05);
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    width: 100%; /* Full width */
-    height: 60vh; /* Full viewport height */
-    /*background-image: url("{{ site.baseurl }}/assets/images/ioai-all-teams.png"); *//* Replace with your image path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    display: flex; /* Flexbox for centering content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center the text */
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-  
+
 .hero-content {
-    color: #ffffff; /* White text */
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-  
+
 .hero-title {
-    font-size: 3rem; /* Large title */
+    font-size: 3rem;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+/* Main Sections */
+.info {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
 
+.info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-@media (max-width: 768px) {
-    .page-title {
-        font-size: 1.7rem;
-    }
-    .centered-text {
-        width: 90%;
-        line-height: 1.5;
-        margin: 0;
-    }
-    
-    .centered-text h1 {
-        font-size: 1.5rem;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+.info p {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    line-height: 1.6;
+}
 
-    .centered-text h2 {
-        font-size: 1.1rem;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+.info-rem {
+    width: 50%;
+    height: 40vh; /* Set the desired height */
+    display: flex; /* Ensure the image fills the space */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide any overflowing part of the image */
+    position: relative; /* Required for positioning child elements */
+}
 
-    .centered-text p {
-        font-size: 1rem;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    .linked-img {
-        display: none;
-    }
+.info-rem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image */
+    position: relative; /* Allows the image to fill the container */
+}
 
-    .info {
-        width: 100%;
-        height: 55vh;
-    }
-    .info h1 {
-        font-size: 1.3rem;
-    }
-    .info p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
+.info-quart {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
 
-    .info-quart {
-        display:none;
-        width: 0%;
-    }
+.info-quart img {
+    max-width: 100%;
+    height: auto;
+}
 
-    .info-rem {
-        display:none;
-        width: 0%;
+/* Page Title */
+.page-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layouts */
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 900px) {
+    .hero {
+        height: 50vh;
     }
 
     .hero-title {
-        font-size: 1.4rem; /* Smaller title on mobile */
+        font-size: 2rem;
     }
+
+    .info {
+        width: 100%; /* Full width for readability on smaller screens */
+    }
+
+    .info-rem {
+        width: 0%;
+        display: none;
+    }
+
+    .info-quart {
+        display: none; /* Hide on smaller screens */
+    }
+
+    .centered-text {
+        padding: 10px;
+        margin-left: 0px;
+    }
+
+    .centered-text p {
+        font-size: 1.1rem;
+    }
+
+    .center-img {
+        width: 60%;
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 600px) {
     .hero {
         height: 40vh;
     }
 
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .info-rem {
+        width: 0%;
+        padding: 10px;
+    }
+
+    .info-quart {
+        display: none; /* Hide completely on very small screens */
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    .centered-text {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .centered-text p {
+        font-size: 1rem;
+    }
+
+    .center-img {
+        width: 80%;
+        margin: 20px auto;
+    }
 }
