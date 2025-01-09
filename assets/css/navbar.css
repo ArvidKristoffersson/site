@@ -31,7 +31,7 @@ nav {
 }
 
 .navbar-logo span {
-    font-size: 2vw;
+    font-size: 1.7vw;
     color: white;
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ nav {
 .navbar-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 .navbar-links a:hover {
@@ -59,7 +59,7 @@ nav {
 
 .discord-text {
     color: white;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
 }
 
 .discord-link img {
