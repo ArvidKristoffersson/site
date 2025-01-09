@@ -12,7 +12,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 13vh; /* 110 px -> 13vh */
+    height: 13vh; /* 110 px -> 13vh, 1.5rem -> 2vw */
     background-color: #28282B;
     padding: 0.6vh 2.4vh;
     position: relative;
@@ -31,7 +31,7 @@ nav {
 }
 
 .navbar-logo span {
-    font-size: 1.5rem;
+    font-size: 2vw;
     color: white;
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ nav {
 .navbar-links a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3vw;
 }
 
 .navbar-links a:hover {
@@ -59,7 +59,7 @@ nav {
 
 .discord-text {
     color: white;
-    font-size: 1rem;
+    font-size: 1.4vw;
 }
 
 .discord-link img {
