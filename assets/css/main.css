@@ -18,7 +18,7 @@ a {
 
 .centered-text {
     display: block;
-    max-width: 800px; 
+    /*max-width: 800px; */
     text-align: center;
     margin: 20px auto;
     padding: 20px;
@@ -41,9 +41,9 @@ a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 20px 40px 0px 40px;
+    margin: 2.4vh 4.8vh 0px 4.8vh;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.5em;
+    font-size: 1.8vw;
 }
 
 .centered-text h2 {
@@ -52,17 +52,17 @@ a {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 0px 40px 0px 30px;
+    margin: 0px 4.8vh 0px 3.6vh;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
+    font-size: 1.2vw;
 }
 
 .centered-text p {
-    font-size: 23px;
+    font-size: 2.76vh;
     color: #555;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 1.2vh;
+    margin-left: 4.8vh;
+    margin-right: 4.8vh;
     line-height: 1.5;
 }
 
@@ -70,7 +70,7 @@ a {
     display: block;
     margin: 40px auto;
     width: 50%;
-    max-width: 300px;
+    /*max-width: 300px;*/
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -111,7 +111,7 @@ a {
 
 .info {
     width: 50%;
-    padding: 10px;
+    padding: 1.2vh;
     text-align: left;
     margin-right: 50px;
 }
@@ -123,7 +123,7 @@ a {
 
 .info p {
     font-size: 1.3vw;
-    margin-bottom: 3px;
+    margin-bottom: 0.36px;
     line-height: 1.4;
 }
 
