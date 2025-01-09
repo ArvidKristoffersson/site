@@ -1,6 +1,6 @@
 footer {
     background-color: #28282B;
-    padding: 20px 0;
+    padding: 2.4vh 0;
     width: 100%;
     color: #fff;
     text-align: center;
@@ -28,12 +28,12 @@ main {
     align-items: center;
     gap: 50vh;
     margin: 0 auto;
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     padding: 0 20px; 
 }
 
 .footer-text {
-    font-size: 1.2em;
+    font-size: 1.32vw;
     font-weight: bold;
     color: #fff;
     flex-shrink: 0;
@@ -42,29 +42,25 @@ main {
 .footer-content {
     display: flex;
     justify-content: flex-start;
-    gap: 200px;
+    gap: 24vh;
 }
 
 .footer-logo img {
-    height: 70px;
+    height: 8.4vh;
     object-fit: contain;
 }
 
-@media (max-width: 1200px) {
-    .footer-text {
-        display: none;
-    }
-
+@media (max-width: 900px) {
     .footer-content {
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        gap: 15px; 
+        gap: 1.8vh; 
         width: 100%;
         text-align: center;
     }
 
     .footer-logo img {
-        max-height: 40px;
+        max-height: 4.8vh;
     }
 }
