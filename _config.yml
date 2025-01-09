@@ -5,8 +5,8 @@ description: >-
   Tävlingen har två delar: ett kval och en final. Kvalet kommer att hållas online och varar i en månad, 
   från 15 februari - 15 mars. Från kvalet blir de bästa inbjudna till en final i Göteborg i maj. 
   Där koras Sveriges bästa gymnasist i artificiell intelligens och lanslaget utses från de bästa fyra i finalen.
-baseurl: "/site"
-url: ""
+baseurl: "/"
+url: "www.arvidkristoffersson.se"
 
 theme: minima
 plugins:
